@@ -1,0 +1,27 @@
+.product-image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+.cards {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: white 10px;
+    padding: 0px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.cards div div {
+    padding-left: 10px;
+}
