@@ -2,6 +2,7 @@
 
 class Accessory extends Product
 {
+    use PetDiscountTrait;
     public $material;
     public $dimension;
 
@@ -15,5 +16,8 @@ class Accessory extends Product
     {
         $this->material = $material;
         $this->dimension = $dimension;
+    }
+    public function price(): float {
+        return $this->discountedPrice();
     }
 }

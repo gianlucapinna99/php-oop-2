@@ -1,7 +1,8 @@
 <?php
+require_once __DIR__ . '/PetDiscountTrait.php';
 
-class Product
-{
+class Product {
+    use PetDiscountTrait;
     public $name;
     public $price;
     public $category;
@@ -13,5 +14,3 @@ class Product
         $this->category = $category;
     }
 }
-
-

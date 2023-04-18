@@ -13,7 +13,6 @@ $cartucce = new Accessory('Cartucce Filtranti per Filtro EasyCrystal', 2.29, 'Pe
 $kong = new Toy('Kong Classic', 13.49, 'Cane', 'Galleggia e rimbalza', '8,5 cm x 10 cm');//Prodotto 7
 $topini = new Toy('Topini di peluche Trixie', 4.99, 'Gatto', 'Morbido con la codina in corda', '8,5 cm x 10 cm');//Prodotto 8
 $products = [$royal_canin, $almo_nature, $almo_nature_cat, $mangime_pesci, $voliera, $cartucce, $kong, $topini];
-
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +27,7 @@ $products = [$royal_canin, $almo_nature, $almo_nature_cat, $mangime_pesci, $voli
 </head>
 <body>
     <h1 class="text-center m-3">BoolShop</h1>
-    <div class="row justify-content-center">
+    <div class="row box">
         <?php foreach ($products as $product) : ?>
             <div class="col-3 m-3 p-3 cards">
                 <div class="text-center">

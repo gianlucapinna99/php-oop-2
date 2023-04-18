@@ -2,6 +2,7 @@
 
 class Food extends Product
 {
+    use PetDiscountTrait;
     public $weight;
     public $ingredients;
 
@@ -15,5 +16,8 @@ class Food extends Product
     {
         $this->weight = $weight;
         $this->ingredients = $ingredients;
+    }
+    public function price(): float {
+        return $this->discountedPrice();
     }
 }

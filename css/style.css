@@ -25,3 +25,8 @@ h3 {
 .cards div div {
     padding-left: 10px;
 }
+
+.box {
+    margin: 0 auto;
+    margin-left: 14%;
+}
